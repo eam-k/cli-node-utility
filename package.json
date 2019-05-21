@@ -1,0 +1,14 @@
+{
+  "name": "my-cli",
+  "version": "1.0.0",
+  "description": "small exercise of a node cli, can change folders, mimic diff linux command, and use child process to directly execute bash.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Eduardo Acosta Montano",
+  "license": "ISC"
+}
