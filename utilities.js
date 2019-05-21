@@ -8,14 +8,13 @@ function getCommandArgs(data) {
 function welcomeMsg() {
     return `\n\tWelcome to node cli linux.
     These are the commands you can use\n
-    \t-ls
-    \t-cd
-    \t-pwd
-    \t-diff
-    \t-clear
-    \t-runInShell
-    \t-readBigFile
-    \tFor help use -h
+    \t-ls\t\t(normal event emitter interaction)
+    \t-cd\t\t(normal event emitter interaction can handle .. and .)
+    \t-pwd\t\t(normal event emitter interaction)
+    \t-diff\t\t(custom implementation of diff command in linux)
+    \t-clear\t\t(normal event emitter interaction)
+    \t-runBash\t(this will run in a child process)
+    \t-readBigFile\t(use stream, has a defaulted limit)
     `
 }
 

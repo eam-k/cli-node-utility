@@ -2,6 +2,6 @@
 Simple command line utility using node
 
 
-To start simply run
+START:
 
-npm run
+npm start
