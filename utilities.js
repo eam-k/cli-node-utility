@@ -1,3 +1,4 @@
+const fs = require('fs');
 function getCommandArgs(data) {
     let instruction, args;
     [instruction, ...args] = data.split(" ");

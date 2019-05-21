@@ -41,7 +41,7 @@ function diff(args, currentDir, callback) {
                 commands.push(arg)
             }
         });
-    if (commands.length < 1) {
+    if (commands.length >=1) {
         callback('Please use one command');
         return;
     }
@@ -50,9 +50,8 @@ function diff(args, currentDir, callback) {
         return
     }
     Promise.all([readFileLines(paths[0]), readFileLines(paths[1])]).then(([fileOne, fileTwo]) => {
-        console.log('Both maps', fileTwo, fileOne);
         diffFiles(fileTwo, fileOne);
-    })
+    }).catch(err => console.log('Something went wrong', err))
 }
 
 
